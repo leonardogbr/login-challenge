@@ -8,4 +8,4 @@ Rodar o comando
 
 Iniciar o metro: `yarn start`
 
-Rodar o Projeto: `yarn android` ou `yarn ios`
+Em outro terminal, rodar o projeto com `yarn android` ou `yarn ios`
