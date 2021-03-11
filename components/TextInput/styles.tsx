@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {Platform} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export const Container = styled.View`
@@ -13,6 +14,7 @@ export const Label = styled.Text`
   color: #383e71;
   text-transform: uppercase;
   margin-left: 10px;
+  margin-bottom: 5px;
 `;
 
 export const InputContainer: any = styled.View`
@@ -33,6 +35,7 @@ export const Input = styled.TextInput.attrs({
   font-family: 'Montserrat-Regular';
   font-size: 10px;
   color: #383e71;
+  padding: ${Platform.OS == 'ios' ? '16px' : '0px'} 0;
 `;
 
 export const InvalidIcon = styled(Icon).attrs({
@@ -46,4 +49,5 @@ export const InvalidMessage = styled.Text`
   font-size: 10px;
   color: #ff377f;
   margin-left: 16px;
+  margin-top: 5px;
 `;

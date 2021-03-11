@@ -12,7 +12,7 @@ export const Body = styled.View`
 export const Background = styled.Image.attrs({
   resizeMode: 'cover',
 })`
-  flex: 0.35;
+  flex: 1;
   height: 100%;
 `;
 
@@ -22,18 +22,17 @@ export const Container = styled.View`
   align-items: flex-start;
   height: 100%;
   background-color: #faf5ff;
-  padding: 20px 30px;
+  padding: 20px 80px;
 `;
 
 export const Title = styled.Text`
   font-family: 'Montserrat-Regular';
   font-size: 40px;
-  line-height: 48px;
   color: #383e71;
 `;
 
 export const Subtitle = styled.Text`
-  font-family: 'Montserrat-Medium';
+  font-family: 'Montserrat-SemiBold';
   font-size: 16px;
   color: #989fdb;
   margin-top: 15px;

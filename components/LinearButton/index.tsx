@@ -6,10 +6,11 @@ const LinearButton = ({
   colors,
   start = {x: 0, y: 0},
   end = {x: 1, y: 0},
+  noShadowBox = false,
   loading,
   ...rest
 }: any) => (
-  <Button {...rest}>
+  <Button {...rest} noShadowBox={noShadowBox}>
     <Container colors={colors} start={start} end={end}>
       {loading ? (
         <ActivityIndicator size="small" color="#ffffff" />

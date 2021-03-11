@@ -2,11 +2,12 @@ import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 
 export const Button = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.7,
+  activeOpacity: 0.9,
 })`
   width: 100%;
-  elevation: 10;
-  box-shadow: 0px 10px 25px #cf99db;
+  ${(props: any) => (props.noShadowBox ? '' : 'elevation: 10;')}
+  ${(props: any) =>
+    props.noShadowBox ? '' : 'box-shadow: 0px 10px 15px #cf99db;'}
 `;
 
 export const Container = styled(LinearGradient)`
