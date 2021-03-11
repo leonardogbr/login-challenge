@@ -35,7 +35,7 @@ export const Input = styled.TextInput.attrs({
   font-family: 'Montserrat-Regular';
   font-size: 10px;
   color: #383e71;
-  padding: ${Platform.OS == 'ios' ? '16px' : '0px'} 0;
+  padding: ${Platform.OS == 'ios' ? '16px' : '10px'} 0;
 `;
 
 export const InvalidIcon = styled(Icon).attrs({

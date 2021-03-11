@@ -67,7 +67,7 @@ export const SubmitButton = styled(LinearButton).attrs({
   position: absolute;
   bottom: 5px;
   align-self: center;
-  margin: 0 30%;
+  margin: 0 28%;
   margin-top: 5px;
 `;
 
